@@ -1,4 +1,4 @@
-# 📌 TaskFlow - Premium To-Do Manager
+# TaskFlow - Premium To-Do Manager
 
 <p align="center">
   <img src="assets/images/splash_logo.png" alt="TaskFlow Logo" width="120" style="border-radius: 24px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);"/>
@@ -19,22 +19,22 @@
 
 ---
 
-## ✨ Features
+## Features
 
-*   **🎬 Premium Animated Splash Screen**: Custom circular checkmark logo with smooth elastic scaling animations and a pulsating breathing shadow halo.
-*   **📖 Onboarding Walkthrough**: A beautiful 3-slide visual onboarding sequence loading custom vector-style graphics that guides new users on app capabilities.
-*   **📊 Dashboard Statistics Card**: Displays real-time task statistics (tasks completed, ratio percentages) with a dynamic circular progress indicator.
-*   **🏷️ Categorization & Tags**: Custom chip selectors grouping tasks dynamically into categories (Work, Personal, Health, Shopping, Others) with matching color-coded indicator lines.
-*   **⚙️ Advanced Sorting & Search**:
+*   **Premium Animated Splash Screen**: Custom circular checkmark logo with smooth elastic scaling animations and a pulsating breathing shadow halo.
+*   **Onboarding Walkthrough**: A beautiful 3-slide visual onboarding sequence loading custom vector-style graphics that guides new users on app capabilities.
+*   **Dashboard Statistics Card**: Displays real-time task statistics (tasks completed, ratio percentages) with a dynamic circular progress indicator.
+*   **Categorization & Tags**: Custom chip selectors grouping tasks dynamically into categories (Work, Personal, Health, Shopping, Others) with matching color-coded indicator lines.
+*   **Advanced Sorting & Search**:
     *   Sort tasks by Date, Priority (High/Medium/Low), or Completion Status.
     *   Dynamic instant text-searching.
     *   Advanced Multi-Filter Search screen allowing cross-queries based on keywords, status checks, and priority.
-*   **🧩 Reusable Components**: Codebase refactored into modular widgets (`TaskCard`, `ProgressCard`, `CategoryFilterList`) for maintainability.
-*   **💼 Fully Persistent (Sqflite)**: Data remains fully saved offline using local SQLite database CRUD transactions. Onboarding visto status is also preserved locally.
+*   **Reusable Components**: Codebase refactored into modular widgets (TaskCard, ProgressCard, CategoryFilterList) for maintainability.
+*   **Fully Persistent (Sqflite)**: Data remains fully saved offline using local SQLite database CRUD transactions. Onboarding view status is also preserved locally.
 
 ---
 
-## 🎨 Luxury Theme Color System
+## Luxury Theme Color System
 
 TaskFlow features a rich, luxurious warm color palette based on deep wine-reds and soft creams, ensuring readability and visual pleasure in both light and dark settings:
 
@@ -45,9 +45,9 @@ TaskFlow features a rich, luxurious warm color palette based on deep wine-reds a
 
 ---
 
-## 📂 Project Architecture (MVC Pattern)
+## Project Architecture (MVC Pattern)
 
-This project strictly adheres to the **Model-View-Controller (MVC)** design pattern, separating concerns for high code readability:
+This project strictly adheres to the Model-View-Controller (MVC) design pattern, separating concerns for high code readability:
 
 ```
 lib/
@@ -58,13 +58,13 @@ lib/
 └── views/                # Modular screens and extracted reusable widgets (V)
 ```
 
-*   **Model**: [todo_model.dart](lib/models/todo_model.dart) represents individual task fields and database converters.
+*   **Model**: todo_model.dart represents individual task fields and database converters.
 *   **View**: Contains individual directories for Splash, Onboarding, Home, Search, and About layouts.
-*   **Controller**: Uses GetX reactive properties (`.obs`) to manage UI rebuilds inside `Obx` observers automatically.
+*   **Controller**: Uses GetX reactive properties (.obs) to manage UI rebuilds inside Obx observers automatically.
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 *   **Flutter SDK**: Single codebase cross-compilations.
 *   **GetX**: Used for reactive state management, simple dependency injection, and context-free route navigations.
@@ -73,7 +73,7 @@ lib/
 
 ---
 
-## 🚀 Getting Started & Installation
+## Getting Started & Installation
 
 To run this project locally, ensure you have the Flutter SDK installed on your machine.
 
@@ -101,11 +101,11 @@ flutter run
 
 ---
 
-## 📖 Educational Learning Guide
+## Educational Learning Guide
 
 Are you a student preparing this project for a classroom task or presentation? We've got you covered! 
 
-Open the **[GUIDE.md](GUIDE.md)** file in the root directory. It contains:
+Open the GUIDE.md file in the root directory. It contains:
 *   A step-by-step breakdown of Flutter and Dart basics.
 *   A detailed explanation of MVC architecture.
 *   GetX reactive state principles.
